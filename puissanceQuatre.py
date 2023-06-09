@@ -5,6 +5,10 @@ import pygame
 LIGNES = 6
 COLONNES = 7
 
+# Initialisation de Pygame
+pygame.init()
+pygame.display.set_caption("Puissance quatre")
+
 # Dimensions de chaque cellule
 TAILLE_CELLULE = 100
 
