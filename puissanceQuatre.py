@@ -1,18 +1,10 @@
 import numpy as np
 import pygame
 
-# Dimensions du plateau de jeu
 LIGNES = 6
 COLONNES = 7
-
-# Initialisation de Pygame
-pygame.init()
-pygame.display.set_caption("Puissance quatre")
-
-# Dimensions de chaque cellule
 TAILLE_CELLULE = 100
 
-# Couleurs
 BLANC = (255, 255, 255)
 BLEU = (0, 0, 255)
 ROUGE = (255, 0, 0)
@@ -82,18 +74,12 @@ class Joueur:
             colonne = int(input("Colonne invalide. Choisissez une autre colonne (0-6) : "))
         return colonne
 
-
-# Initialise Pygame
 pygame.init()
+pygame.display.set_caption("Puissance quatre")
 
-# Dimensions de la fenêtre
 LARGEUR = COLONNES * TAILLE_CELLULE
 HAUTEUR = (LIGNES + 1) * TAILLE_CELLULE
-
-# Crée la fenêtre
 fenetre = pygame.display.set_mode((LARGEUR, HAUTEUR))
-
-# Police de texte
 police = pygame.font.Font(None, 40)
 
 plateau = Plateau()
